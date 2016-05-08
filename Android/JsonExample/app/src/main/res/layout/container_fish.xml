@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:scaleType="fitXY"
+        android:layout_height="40dp"
+        android:id="@+id/ivFish"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="fish name"
+        android:id="@+id/textFishName"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/ivFish"
+        android:layout_toLeftOf="@+id/textPrice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="price"
+        android:id="@+id/textPrice"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textSize"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textFishName"
+        android:layout_toRightOf="@id/ivFish"
+        android:layout_toEndOf="@id/ivFish"
+        android:textColor="#666"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="sd"
+        android:id="@+id/textType"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textSize"
+        android:layout_toRightOf="@id/ivFish"
+        android:textColor="#666"/>
+
+</RelativeLayout>
